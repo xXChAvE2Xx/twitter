@@ -18,4 +18,10 @@ describe("Test para User", () => {
         const user = new User(1,"raulchavez", "Raul Antonio", "Bio")
         expect(user.getUsername).toBe("raulchavez")
     })
+
+    test("Requeirmiento 4: Agregando setter", () =>{
+        const user = new User(1,"raulchavez", "Raul Antonio", "Bio")
+        user.setUsername = "Rulas"
+        expect(user.getUsername).toBe("Rulas")
+    })
 })

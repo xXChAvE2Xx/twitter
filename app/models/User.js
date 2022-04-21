@@ -12,6 +12,10 @@ class User{
         return this.username
     }
 
+    set setUsername(username){
+        this.username = username
+    }
+
 }
 
 module.exports = User;
